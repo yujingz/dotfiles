@@ -1,18 +1,18 @@
-colorscheme solarized_dark
+"colorscheme solarized_dark
+colorscheme railscasts
 
 set guioptions=ce
 set antialias
 set nowrap
 set linespace=2
 set spell
-let g:ctrlp_show_hidden = 1
 
 if has("gui_macvim")
-  set guifont=Monaco:h15
+  set guifont=SourceCodePro-Regular:h14
 elseif has("gui_gtk")
   set guifont=Monospace\ 13
 else
-  set guifont=Monaco:h15
+  set guifont=Monaco:h14
 end
 
 if has("gui_macvim")

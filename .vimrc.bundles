@@ -1,32 +1,5 @@
-
-map <DOWN> <NOP>
-map <LEFT> <NOP>
-map <RIGHT> <NOP>
-inoremap <UP> <NOP>
-inoremap <DOWN> <NOP>
-inoremap <LEFT> <NOP>
-inoremap <RIGHT> <NOP>
-
-" cancel searched highlight
-noremap <CR> :nohlsearch<CR>
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
-
-let g:NERDTreeWinSize = 30
-let g:ctrlp_show_hidden = 1
-set nowrap
-
-" Use ctrl-[hjkl] to select the active split
-nmap <silent> <c-k> :wincmd k<CR>
-nmap <silent> <c-j> :wincmd j<CR>
-nmap <silent> <c-h> :wincmd h<CR>
-nmap <silent> <c-l> :wincmd l<CR>
-
 Bundle "gmarik/vundle"
-Bundle "ack.vim"
+Bundle "mileszs/ack.vim"
 Bundle "Align"
 Bundle "calendar.vim"
 Bundle "cocoa.vim"
@@ -63,6 +36,3 @@ Bundle "tpope/vim-haml"
 Bundle "cakebaker/scss-syntax.vim"
 Bundle "tpope/vim-surround"
 Bundle "vimwiki"
-
-syntax on
-filetype indent on
