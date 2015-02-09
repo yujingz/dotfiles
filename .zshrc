@@ -43,5 +43,22 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 export BUNDLER_EDITOR=mvim
 
-export GOPATH=/Users/yz/Workspaces/Personal/go
+export GOPATH=$HOME/Workspaces/go
+
 export PATH=$PATH:$GOPATH/bin
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/yz/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables bash completion for gcloud.
+source '/Users/yz/google-cloud-sdk/completion.zsh.inc'
+
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
+
+export NVM_DIR="/Users/yz/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/yz/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
